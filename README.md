@@ -1,2 +1,1 @@
-# L2
-Cereals
+# Coding Challenge - Cereals
