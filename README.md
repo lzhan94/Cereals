@@ -13,7 +13,7 @@ It takes a command line argument, filepath, for the desired location of cereals.
 If no filepath is given, the default is the directory of cereals.py.
 If cereals.csv does not exist, it will be created. If it does, the new data will be appended to it.
 
-###2. To run the program:
+###2. Running the Program:
 The program, cereals.py, requires Python 2.7 with the following packages:
   * os
   * sys
@@ -28,7 +28,7 @@ For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals
     $python cereals.py /home/username/tmp
   
 
-###3. To let it run every day:
+###3. Scheduling to run it every day:
 On a Unix OS, in the shell session, type the following
   
     $crontab -e
@@ -40,6 +40,6 @@ This will open a file. Please insert the following line at the end of the file:
 /absolute/path/to/cereals.py should be replaced by the actual absolute path to cereals.py. *filepath* should be replaced by the absolute path to the directory containing cereals.csv.
 
 
-###4. Notes on implementation decisions:
+###4. Notes on Implementation Decisions:
 The program only looks at the search result page to scrape the data instead of going into each product's page, which would be time inefficient. As a result, only the brands given in the list "brands" can be indicated in the data. If a product is not from one of the given brands, its brand will be marked as "Other". Similarly, a product's rating will be rounded to 0.5 steps.
 There is a trade-off between time efficiency and accuracy. Considering the amount of time needed to run the other version (opening each product's page), I decided to choose time efficiency over accuracy.
