@@ -21,7 +21,9 @@
   * datetime
 
   Run the program with an argument for the location of cereals.csv
-  For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp".
+  For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp", i.e.
+  
+  $python /home/username/tmp
   
 
 ###3. To let it run every day:
