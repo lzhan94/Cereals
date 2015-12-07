@@ -22,7 +22,7 @@ The program, cereals.py, requires Python 2.7 with the following packages:
   * beautifulsoup4
   * datetime
 
-Run the program with an argument for the location of cereals.csv
+Run the program with an argument for the location of cereals.csv.
 For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp", i.e.
   
     $python cereals.py /home/username/tmp
@@ -37,7 +37,7 @@ This will open a file. Please insert the following line at the end of the file:
   
     * * */1 * * /usr/bin/python /absolute/path/to/cereals.py filepath
   
-/absolute/path/to/cereals.py should be replaced by the actual absolute path to cereals.py. filepath should be replaced by the absolute path to the directory containing cereals.csv.
+/absolute/path/to/cereals.py should be replaced by the actual absolute path to cereals.py. *filepath* should be replaced by the absolute path to the directory containing cereals.csv.
 
 
 ###4. Notes on implementation decisions:
