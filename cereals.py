@@ -51,7 +51,7 @@ def collect(search_terms, brands, filepath):
             page_counter = page_counter+1
             html = urllib2.urlopen(url)
             
-            soup = BeautifulSoup(html, from_encoding="utf-8")
+            soup = BeautifulSoup(html, "html5lib", from_encoding="utf-8")
             product_soup = soup.findAll('div', class_='js-tile js-tile-landscape tile-landscape')
             
             #iterate through each product
