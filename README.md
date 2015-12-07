@@ -9,8 +9,8 @@ The *search_terms* and *brands* can be modified inside the code.
 
 The program collects the *ranking, name, brand, search term, ratings, number of reviews*, and *date* for a given product that comes up in the results page when searching by *search term*. 
 
-It takes a command line argument, filepath, is the absolute path to the csv file.
-If no filepath is given, the default is the directory of cereals.py and the file will be called cereals.csv.
+It takes a command line argument, filepath, as the absolute path to the csv file.
+If no filepath is given, the file will be called cereals.csv and it will be stored in the same directory as cereals.py by default.
 If the csv file does not exist, it will be created. If it does exist, the new data will be appended to the existing file.
 
 ###2. Running the Program:
@@ -41,5 +41,5 @@ This will open a file. Please insert the following line at the end of the file:
 
 
 ###4. Notes on Implementation Choices:
-The program only looks at the search result page to scrape the data instead of going into each product's page, which would be time inefficient. As a result, only the brands given in the list "brands" can be indicated in the data. If a product is not from one of the given brands, its brand will be marked as "Other". Similarly, a product's rating will be rounded to 0.5 steps.
-There is a trade-off between time efficiency and accuracy. Considering the amount of time needed to run the other version (opening each product's page), I decided to choose time efficiency over accuracy.
+The program only looks at the search result page to scrape the data instead of going into each product's page, which would be time inefficient. As a result, only the brands given in the list "brands" can be indicated in the data. If a product is not from one of the given brands, its brand will be marked as "Other". Similarly, a product's rating will be rounded to nearest multiple of .5.
+There is a trade-off between time efficiency and accuracy. Considering the amount of time needed to run the other version (opening each product's page), I decided to prioritize time efficiency over accuracy.
