@@ -4,8 +4,8 @@
 ###1. Description: 
 This is the solution to the L2 coding challenge. 
 
-The program, cereals.py, collects data by searching www.walmart.com, using the given search_terms and brands.
-The search_terms and brands can be modified inside the code.
+The program, cereals.py, collects data by searching www.walmart.com, using the given *search_terms* and *brands*.
+The *search_terms* and *brands* can be modified inside the code.
 
 The program collects the *ranking, name, brand, search term, ratings, number of reviews*, and *date* for a given product that comes up in the results page when searching by *search term*. 
 
