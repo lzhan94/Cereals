@@ -21,9 +21,9 @@ search_terms=['cereal','cold cereal']
 def csv_append(data, filepath):
     import csv
     import os
-    with open (filepath+'/cereals.csv','ab') as f:
+    with open (filepath,'ab') as f:
         writer = csv.writer(f)        
-        if os.stat('cereals.csv').st_size == 0:
+        if os.stat(filepath).st_size == 0:
             writer.writerow(['rank', 'title','brand','search_term','rating','no_of_reviews', 'year','month','day','hour','minute'])
         writer.writerows(data)
 
@@ -98,7 +98,7 @@ if __name__=='__main__':
 	import sys
 	import os
 	if len(sys.argv)<2:
-		filepath = sys.path[0]
+		filepath = str(sys.path[0])+'/cereals.csv'
 	else:
 		filepath = sys.argv[1]
 	main(filepath)
