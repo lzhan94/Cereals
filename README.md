@@ -10,7 +10,7 @@ The search_terms and brands can be modified inside the code.
 The program collects the *ranking, name, brand, search term, ratings, number of reviews*, and *date* for a given product that comes up in the results page when searching by *search term*. 
 
 It takes a command line argument, filepath, for the desired location of cereals.csv.
-If no filepath is given, the default is the directory of cereals.py
+If no filepath is given, the default is the directory of cereals.py.
 If cereals.csv does not exist, it will be created. If it does, the new data will be appended to it.
 
 ###2. To run the program:
@@ -25,7 +25,7 @@ The program, cereals.py, requires Python 2.7 with the following packages:
 Run the program with an argument for the location of cereals.csv
 For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp", i.e.
   
-    $python /home/username/tmp
+    $python cereals.py /home/username/tmp
   
 
 ###3. To let it run every day:
