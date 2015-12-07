@@ -13,12 +13,12 @@
 
 ###2. To run the program:
   The program, cereals.py, requires Python 2.7 with the following packages:
-    * os
-    * sys
-    * csv
-    * urllib2
-    * beautifulsoup4
-    * datetime
+  * os
+  * sys
+  * csv
+  * urllib2
+  * beautifulsoup4
+  * datetime
 
   Run the program with an argument for the location of cereals.csv
   For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp".
@@ -26,6 +26,7 @@
 
 ###3. To let it run every day:
   On a Unix OS, in the shell session, type the following
+  
     $crontab -e
 
   This will open a file. Please insert the following line at the end of the file:
