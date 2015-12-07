@@ -9,9 +9,9 @@ The *search_terms* and *brands* can be modified inside the code.
 
 The program collects the *ranking, name, brand, search term, ratings, number of reviews*, and *date* for a given product that comes up in the results page when searching by *search term*. 
 
-It takes a command line argument, filepath, for the desired location of cereals.csv.
-If no filepath is given, the default is the directory of cereals.py.
-If cereals.csv does not exist, it will be created. If it does, the new data will be appended to it.
+It takes a command line argument, filepath, is the absolute path to the csv file.
+If no filepath is given, the default is the directory of cereals.py and the file will be called cereals.csv.
+If the csv file does not exist, it will be created. If it does exist, the new data will be appended to the existing file.
 
 ###2. Running the Program:
 The program, cereals.py, requires Python 2.7 with the following packages:
@@ -22,10 +22,10 @@ The program, cereals.py, requires Python 2.7 with the following packages:
   * beautifulsoup4
   * datetime
 
-Run the program with an argument for the location of cereals.csv.
-For instance, if the absolute path for cereals.csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp", i.e.
+Run the program with the filepath of the csv.
+For instance, if the absolute path for the csv is /home/username/tmp/cereals.csv, then the command line argument should be "/home/username/tmp/cereals.csv", i.e.
   
-    $python cereals.py /home/username/tmp
+    $python cereals.py /home/username/tmp/cereals.csv
   
 
 ###3. Scheduling to run it every day:
@@ -35,9 +35,9 @@ On a Unix OS, in the shell session, type the following
 
 This will open a file. Please insert the following line at the end of the file:
   
-    * * */1 * * /usr/bin/python /absolute/path/to/cereals.py filepath
+    * * */1 * * /usr/bin/python /absolute/path/to/cereals.py /home/username/tmp/cereals.csv
   
-/absolute/path/to/cereals.py should be replaced by the actual absolute path to cereals.py. *filepath* should be replaced by the absolute path to the directory containing cereals.csv.
+/absolute/path/to/cereals.py should be replaced by the actual absolute path to cereals.py. /home/username/tmp/cereals.csv should be replaced by the absolute path to the csv file.
 
 
 ###4. Notes on Implementation Choices:
