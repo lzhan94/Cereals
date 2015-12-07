@@ -43,7 +43,7 @@ This will set the program to run at midnight every day.
 
 Optional: cron will automatically print the output of the file to another log file. If you want to customize this and specify the file that contains outputs, use
 
-   * * */1 * * /usr/bin/python /absolute/path/to/cereals.py /home/username/tmp/cereals.csv >> /absolute/path/to/cron.log 2>&1
+  * * */1 * * /usr/bin/python /absolute/path/to/cereals.py /home/username/tmp/cereals.csv >> /absolute/path/to/cron.log 2>&1
 
 
 ###4. Notes on Implementation Choices:
