@@ -2,11 +2,14 @@
 """
 @author: Lusa Zhan
 cereals.py
+
 This is the solution to the coding challenge. 
 This program collects data by searching www.walmart.com, using the given search_terms and brands.
 The search_terms and brands can be modified inside the code.
 The data collected is on the reanking, name, brand, search term, ratings, number of reviews, 
 and date for a given product that comes up in the results page when searching the search term. 
+
+
 """
 
 #website, brands and search terms
