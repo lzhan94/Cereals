@@ -12,7 +12,7 @@ and date for a given product that comes up in the results page when searching th
 
 """
 
-#website, brands and search terms
+#brands and search terms
 brands = ['Cheerios', 'Kashi','Kellogg\'s','Post']
 search_terms=['cereal','cold cereal']          
 
