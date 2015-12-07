@@ -41,6 +41,10 @@ This will open a file. Please insert the following line at the end of the file:
 
 This will set the program to run at midnight every day.
 
+Optional: cron will automatically print the output of the file to another log file. If you want to customize this and specify the file that contains outputs, use
+
+   * * */1 * * /usr/bin/python /absolute/path/to/cereals.py /home/username/tmp/cereals.csv >> /absolute/path/to/cron.log 2>&1
+
 
 ###4. Notes on Implementation Choices:
 The program only looks at the search result page to scrape the data instead of going into each product's page, which would be time inefficient. As a result, only the brands given in the list "brands" can be indicated in the data. If a product is not from one of the given brands, its brand will be marked as "Other". Similarly, a product's rating will be rounded to nearest multiple of .5.
